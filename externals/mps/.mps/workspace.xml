@@ -13,7 +13,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9351fdb8-d018-4fd1-a581-87502ac11c8e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/generator/classes_gen/ArduinoML/generator/templates/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/generator/classes_gen/ArduinoML/generator/templates/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/generator/source_gen.caches/ArduinoML/generator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/generator/source_gen.caches/ArduinoML/generator/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/generator/source_gen.caches/ArduinoML/generator/templates/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/generator/source_gen.caches/ArduinoML/generator/templates/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/generator/source_gen/ArduinoML/generator/templates/QueriesGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/generator/source_gen/ArduinoML/generator/templates/QueriesGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/generator/source_gen/ArduinoML/generator/templates/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/generator/source_gen/ArduinoML/generator/templates/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/generator/templates/ArduinoML.generator.templates@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/generator/templates/ArduinoML.generator.templates@generator.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/classes_gen/ArduinoML/VerySimpleAlarm/trace.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/classes_gen/ArduinoML/sandbox/test/trace.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/classes_gen/ArduinoML/sandbox/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/classes_gen/ArduinoML/sandbox/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/models/ArduinoML.VerySimpleAlarm.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.test.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/VerySimpleAlarm/dependencies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/VerySimpleAlarm/generated" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/sandbox/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/sandbox/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/sandbox/test/dependencies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/sandbox/test/generated" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen/ArduinoML/VerySimpleAlarm/trace.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen/ArduinoML/sandbox/map_App.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen/ArduinoML/sandbox/map_App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen/ArduinoML/sandbox/test/trace.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen/ArduinoML/sandbox/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen/ArduinoML/sandbox/trace.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +48,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="f3bd6bdc-d6b8-48d0-a38a-9119f9646da7/r:dbd9d746-4b3a-4edb-a8c8-9970614056fe(TempModulef3bd6bdc-d6b8-48d0-a38a-9119f9646da7/ConsoleModel_278810469467900)">
+            <model ref="de3d48b3-0112-40ce-80a4-a4109491b953/r:4554fe7d-af38-40c7-8ff5-40e842c1c83e(TempModulede3d48b3-0112-40ce-80a4-a4109491b953/ConsoleModel_345732593486600)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -46,11 +68,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="523yQtkh0b1">
-                <node concept="3balQm" id="523yQtkh0b2" role="aymYE" />
-                <node concept="2Clz$F" id="523yQtkh0b3" role="aymYO" />
-                <node concept="2_V_lH" id="523yQtkh0b4" role="1PhJh3">
-                  <ref role="2_V_lI" node="523yQtkh0b3" resolve="CommandHolder" />
+              <node concept="aymSD" id="523yQtkkMjt">
+                <node concept="3balQm" id="523yQtkkMju" role="aymYE" />
+                <node concept="2Clz$F" id="523yQtkkMjv" role="aymYO" />
+                <node concept="2_V_lH" id="523yQtkkMjw" role="1PhJh3">
+                  <ref role="2_V_lI" node="523yQtkkMjv" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -195,11 +217,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
+              <option name="myItemId" value="mps" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -211,23 +234,13 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:19e21ba5-6eea-4a13-9075-2073f1576902(ArduinoML.VerySimpleAlarm) in IdeaFile[path: G:/Documents/GitHub/dsl-circular/languages/ArduinoML/sandbox/models/ArduinoML.VerySimpleAlarm.mps]" />
+              <option name="myItemId" value="r:701d26ce-f6f2-4dd4-9cc6-205e96a776e8(ArduinoML.sandbox) in IdeaFile[path: /G:/Documents/GitHub/Circular-DSL-Arduino/externals/mps/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5a4f9ad6-d577-4d5d-b6c3-1790ae1d2269" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
+              <option name="myItemId" value="mps" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -235,27 +248,13 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:66a667e6-d554-4b86-b4c5-5214c2eb91f8(ArduinoML.editor) in IdeaFile[path: /G:/Documents/GitHub/dsl-circular/languages/ArduinoML/models/ArduinoML.editor.mps]" />
+              <option name="myItemId" value="ArduinoML.generator" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ff891c49-8252-4f1c-9fc8-0e548a033e45(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:266037e1-cd0a-4250-9ff3-2b4302b7c3a2(ArduinoML.structure) in IdeaFile[path: /G:/Documents/GitHub/dsl-circular/languages/ArduinoML/models/ArduinoML.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
+              <option name="myItemId" value="mps" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -273,7 +272,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
+              <option name="myItemId" value="mps" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -285,19 +284,31 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:701d26ce-f6f2-4dd4-9cc6-205e96a776e8(ArduinoML.sandbox) in IdeaFile[path: /G:/Documents/GitHub/dsl-circular/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps]" />
+              <option name="myItemId" value="r:701d26ce-f6f2-4dd4-9cc6-205e96a776e8(ArduinoML.sandbox) in IdeaFile[path: /G:/Documents/GitHub/Circular-DSL-Arduino/externals/mps/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5801634020895782724" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
+              <option name="myItemId" value="mps" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5a4f9ad6-d577-4d5d-b6c3-1790ae1d2269" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArduinoML" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
+              <option name="myItemId" value="mps" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -313,69 +324,62 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:2d74ebcb-45b3-4db6-8730-5998aa13b86b(ArduinoML.generator.templates@generator) in IdeaFile[path: /G:/Documents/GitHub/dsl-circular/languages/ArduinoML/generator/templates/ArduinoML.generator.templates@generator.mps]" />
+              <option name="myItemId" value="r:2d74ebcb-45b3-4db6-8730-5998aa13b86b(ArduinoML.generator.templates@generator) in IdeaFile[path: /G:/Documents/GitHub/Circular-DSL-Arduino/externals/mps/languages/ArduinoML/generator/templates/ArduinoML.generator.templates@generator.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ff891c49-8252-4f1c-9fc8-0e548a033e45(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArduinoML.generator" />
+              <option name="myItemId" value="mps" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
+              <option name="myItemId" value="mps" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="5a4f9ad6-d577-4d5d-b6c3-1790ae1d2269" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ArduinoML" />
+              <option name="myItemId" value="mps" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ff891c49-8252-4f1c-9fc8-0e548a033e45(ArduinoML)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
+              <option name="myItemId" value="mps" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ff891c49-8252-4f1c-9fc8-0e548a033e45(ArduinoML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:266037e1-cd0a-4250-9ff3-2b4302b7c3a2(ArduinoML.structure) in IdeaFile[path: /G:/Documents/GitHub/Circular-DSL-Arduino/externals/mps/languages/ArduinoML/models/ArduinoML.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <SELECTED>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dsl-circular" />
+              <option name="myItemId" value="mps" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ff891c49-8252-4f1c-9fc8-0e548a033e45(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:266037e1-cd0a-4250-9ff3-2b4302b7c3a2(ArduinoML.structure) in IdeaFile[path: /G:/Documents/GitHub/dsl-circular/languages/ArduinoML/models/ArduinoML.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8995722191379911291" />
+              <option name="myItemId" value="5a4f9ad6-d577-4d5d-b6c3-1790ae1d2269" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="FileSystem" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -388,6 +392,50 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Java Application.Node VerySimpleAlarm">
+    <configuration name="Tests in 'ArduinoML'" type="JUnit Tests" factoryName="JUnit Tests" temporary="true">
+      <myJUnitSettings>
+        <MyState>
+          <option name="myModelRef" />
+          <option name="myModuleRef" value="ff891c49-8252-4f1c-9fc8-0e548a033e45(ArduinoML)" />
+          <option name="myInProcess" value="false" />
+          <option name="myReuseCaches" value="true" />
+          <option name="myOverrideCachesLocation" value="false" />
+          <option name="myDebug" value="false" />
+          <option name="myCachesPath" value="C:\Users\Stephane\AppData\Roaming\JetBrains\MPSJUnitRC0" />
+          <option name="myTestCases">
+            <list />
+          </option>
+          <option name="myTestMethods">
+            <list />
+          </option>
+          <option name="myRunType" value="1" />
+        </MyState>
+      </myJUnitSettings>
+      <myJavaRunParameters>
+        <MyState>
+          <option name="myJavaParameters">
+            <JavaRunParameters>
+              <option name="jrePath" />
+              <option name="programParameters" />
+              <option name="useAlternativeJre" value="false" />
+              <option name="vmOptions" value="-ea" />
+              <option name="workingDirectory" value="E:\MPS 2020.3" />
+            </JavaRunParameters>
+          </option>
+        </MyState>
+      </myJavaRunParameters>
+      <myDeploySettings>
+        <MyState>
+          <option name="myPluginsToDeploy">
+            <list />
+          </option>
+        </MyState>
+      </myDeploySettings>
+      <method v="2">
+        <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
+        <option name="jetbrains.mps.execution.configurations.implementation.plugin.plugin.AssemblePluginsBeforeTask_BeforeTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Node ArduinoML.sandbox.map_App" type="Java Application" factoryName="Java" temporary="true">
       <myNode>
         <MyState>
@@ -439,6 +487,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Java Application.Node VerySimpleAlarm" />
+        <item itemvalue="JUnit Tests.Tests in 'ArduinoML'" />
         <item itemvalue="Java Application.Node ArduinoML.sandbox.map_App" />
       </list>
     </recent_temporary>

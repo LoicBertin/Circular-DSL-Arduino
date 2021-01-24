@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:77970f13-ebab-497e-b683-7617aa881b73(ArduinoML.sandbox.test)">
+<model ref="r:cec610f2-6645-424c-8cec-fefa8951d06c(ArduinoML.sandbox)">
   <persistence version="9" />
   <languages />
   <imports />
