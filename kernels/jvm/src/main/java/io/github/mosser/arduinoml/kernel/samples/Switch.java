@@ -1,0 +1,80 @@
+package io.github.mosser.arduinoml.kernel.samples;
+
+import io.github.mosser.arduinoml.kernel.App;
+import io.github.mosser.arduinoml.kernel.behavioral.*;
+import io.github.mosser.arduinoml.kernel.generator.ToWiring;
+import io.github.mosser.arduinoml.kernel.generator.Visitor;
+import io.github.mosser.arduinoml.kernel.structural.*;
+
+import java.util.Arrays;
+
+public class Switch {
+
+	public static void main(String[] args) {
+
+		// Declaring elementary bricks
+		Sensor button = new Sensor();
+		button.setName("button");
+		button.setPin(9);
+
+		Sensor button2 = new Sensor();
+		button2.setName("button2");
+		button2.setPin(10);
+
+		Actuator buzzer = new Buzzer();
+		buzzer.setName("buzzer");
+		buzzer.setPin(13);
+
+		// Declaring states
+		State on = new State();
+		on.setName("on");
+
+		State off = new State();
+		off.setName("off");
+
+		// Creating actions
+		Action turnOnBuzzer = new Action();
+		turnOnBuzzer.setActuator(buzzer);
+		turnOnBuzzer.setValue(SIGNAL.HIGH);
+
+		Action turnOffBuzzer = new Action();
+		turnOffBuzzer.setActuator(buzzer);
+		turnOffBuzzer.setValue(SIGNAL.LOW);
+
+		// Binding actions to states
+		on.setActions(Arrays.asList(turnOnBuzzer));
+		off.setActions(Arrays.asList(turnOffBuzzer));
+
+		// Creating transitions
+		Transition on2off = new Transition();
+		on2off.setNext(off);
+		on2off.setSensor(Arrays.asList(button, button2));
+		on2off.setValue(SIGNAL.HIGH);
+		on2off.setLogical(LOGICAL.AND);
+
+		Transition off2on = new Transition();
+		off2on.setNext(on);
+		off2on.setSensor(Arrays.asList(button, button2));
+		off2on.setValue(SIGNAL.HIGH);
+		off2on.setLogical(LOGICAL.AND);
+
+		// Binding transitions to states
+		on.setTransition(on2off);
+		off.setTransition(off2on);
+
+		// Building the App
+		App theSwitch = new App();
+		theSwitch.setName("Switch!");
+		theSwitch.setBricks(Arrays.asList(button, button2));
+		theSwitch.setStates(Arrays.asList(on, off));
+		theSwitch.setInitial(off);
+
+		// Generating Code
+		Visitor codeGenerator = new ToWiring();
+		theSwitch.accept(codeGenerator);
+
+		// Printing the generated code on the console
+		System.out.println(codeGenerator.getResult());
+	}
+
+}
