@@ -187,10 +187,25 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7MJqHN8DLjz" role="3EZMnx">
-        <property role="3F0ifm" value="&lt;=" />
+        <property role="3F0ifm" value="plays" />
       </node>
       <node concept="3F0A7n" id="7MJqHN8DLjT" role="3EZMnx">
         <ref role="1NtTu8" to="hkcw:7MJqHN8DLcD" resolve="note" />
+      </node>
+      <node concept="3F0ifn" id="4Zcn436UZpD" role="3EZMnx">
+        <property role="3F0ifm" value="for" />
+      </node>
+      <node concept="3F0A7n" id="4Zcn436Uq8n" role="3EZMnx">
+        <ref role="1NtTu8" to="hkcw:4Zcn436Uq84" resolve="duration" />
+      </node>
+      <node concept="3F0ifn" id="4Zcn436UZpl" role="3EZMnx">
+        <property role="3F0ifm" value="duration" />
+      </node>
+      <node concept="3F0A7n" id="4Zcn436Uq8B" role="3EZMnx">
+        <ref role="1NtTu8" to="hkcw:4Zcn436Uq87" resolve="number_of_iteration" />
+      </node>
+      <node concept="3F0ifn" id="4Zcn436VESx" role="3EZMnx">
+        <property role="3F0ifm" value="time(s)" />
       </node>
     </node>
   </node>
