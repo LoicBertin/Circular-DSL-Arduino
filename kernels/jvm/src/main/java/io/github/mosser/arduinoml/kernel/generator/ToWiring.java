@@ -156,23 +156,49 @@ public class ToWiring extends Visitor<StringBuffer> {
 	}
 
 	@Override
-	public void visit(Action action) {
+	public void visit(DigitalAction action) {
 		if(context.get("pass") == PASS.ONE) {
 			return;
 		}
 		if(context.get("pass") == PASS.TWO) {
-			if(action.getActuator().getClass() == Actuator.class){
-				w(String.format("\t\t\tdigitalWrite(%d,%s);\n",action.getActuator().getPin(),action.getValue()));
-				return;
-			}else{
-				if(action.getValue().equals(SIGNAL.HIGH)){
-					w(String.format("\t\t\ttone(%s, 255, 100);\n", action.getActuator().getPin()));
-				}else{
-					w(String.format("\t\t\tnoTone(%s);\n", action.getActuator().getPin()));
-				}
-			}
-
+			w(String.format("\t\t\tdigitalWrite(%d,%s);\n",action.getActuator().getPin(), action.getSignal()));
+			return;
 		}
 	}
 
+	@Override
+	public void visit(ToneAction action) {
+		if(context.get("pass") == PASS.ONE) {
+			return;
+		}
+		if(context.get("pass") == PASS.TWO) {
+			System.out.println(action);
+			System.out.println("---------------");
+			System.out.println(NOTE.STOP);
+			System.out.println("---------------");
+			System.out.println(action.getNote());
+			if(!action.getNote().equals(NOTE.STOP)){
+				w(String.format("\t\t\ttone(%s, %d, 100);\n", action.getActuator().getPin(), noteConverter(action.getNote())));
+			}else{
+				w(String.format("\t\t\tnoTone(%s);\n", action.getActuator().getPin()));
+			}
+		}
+	}
+
+	public int noteConverter(NOTE note) {
+		switch (note) {
+			case C4:
+				return 262;
+			case G3:
+				return 196;
+			case A3:
+				return 220;
+			case B3:
+				return 247;
+			default:
+				return 0;
+		}
+	}
 }
+
+

@@ -13,7 +13,8 @@ public abstract class Visitor<T> {
 
 	public abstract void visit(State state);
 	public abstract void visit(Transition transition);
-	public abstract void visit(Action action);
+	public abstract void visit(DigitalAction action);
+	public abstract void visit(ToneAction action);
 
 	public abstract void visit(Actuator actuator);
 	public abstract void visit(Buzzer buzzer);

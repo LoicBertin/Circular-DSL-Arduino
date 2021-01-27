@@ -1,6 +1,9 @@
 package main.groovy.groovuinoml.dsl
 
+import io.github.mosser.arduinoml.kernel.behavioral.DigitalAction
 import io.github.mosser.arduinoml.kernel.behavioral.LOGICAL
+import io.github.mosser.arduinoml.kernel.behavioral.NOTE
+import io.github.mosser.arduinoml.kernel.behavioral.ToneAction
 
 import java.util.List;
 
@@ -34,10 +37,16 @@ abstract class GroovuinoMLBasescript extends Script {
 		def closure
 		closure = { actuator -> 
 			[becomes: { signal ->
-				Action action = new Action()
+				DigitalAction action = new DigitalAction()
 				action.setActuator(actuator instanceof String ? (Actuator)((GroovuinoMLBinding)this.getBinding()).getVariable(actuator) : (Actuator)actuator)
-				action.setValue(signal instanceof String ? (SIGNAL)((GroovuinoMLBinding)this.getBinding()).getVariable(signal) : (SIGNAL)signal)
-				//action.setValue("high")
+				action.setSignal(signal instanceof String ? (SIGNAL)((GroovuinoMLBinding)this.getBinding()).getVariable(signal) : (SIGNAL)signal)
+				actions.add(action)
+				[and: closure]
+			},
+			plays: { note ->
+				ToneAction action = new ToneAction()
+				action.setActuator(actuator instanceof String ? (Actuator)((GroovuinoMLBinding)this.getBinding()).getVariable(actuator) : (Actuator)actuator)
+				action.setNote(note instanceof String ? (NOTE)((GroovuinoMLBinding)this.getBinding()).getVariable(note) : (NOTE)note)
 				actions.add(action)
 				[and: closure]
 			}]

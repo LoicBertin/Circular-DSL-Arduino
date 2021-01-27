@@ -33,13 +33,13 @@ public class Switch {
 		off.setName("off");
 
 		// Creating actions
-		Action turnOnBuzzer = new Action();
+		ToneAction turnOnBuzzer = new ToneAction();
 		turnOnBuzzer.setActuator(buzzer);
-		turnOnBuzzer.setValue(SIGNAL.HIGH);
+		turnOnBuzzer.setNote(NOTE.A3);
 
-		Action turnOffBuzzer = new Action();
+		ToneAction turnOffBuzzer = new ToneAction();
 		turnOffBuzzer.setActuator(buzzer);
-		turnOffBuzzer.setValue(SIGNAL.LOW);
+		turnOffBuzzer.setNote(NOTE.STOP);
 
 		// Binding actions to states
 		on.setActions(Arrays.asList(turnOnBuzzer));

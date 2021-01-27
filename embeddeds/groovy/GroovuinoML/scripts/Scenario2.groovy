@@ -2,8 +2,8 @@ sensor "button" pin 9
 sensor "button2" pin 10
 buzzer "buzzer" pin 13
 
-state "on" means  buzzer becomes high
-state "off" means buzzer becomes low
+state "on" means  buzzer plays C4
+state "off" means buzzer plays STOP
 
 initial off
 
