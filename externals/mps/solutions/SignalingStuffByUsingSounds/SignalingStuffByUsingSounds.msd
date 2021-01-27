@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="ArduinoML.sandbox" uuid="5a4f9ad6-d577-4d5d-b6c3-1790ae1d2269" moduleVersion="0" compileInMPS="true">
+<solution name="SignalingStuffByUsingSounds" uuid="8a074a0d-a904-4b6d-85c2-d51276bbf1d1" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -19,7 +19,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="5a4f9ad6-d577-4d5d-b6c3-1790ae1d2269(ArduinoML.sandbox)" version="0" />
+    <module reference="8a074a0d-a904-4b6d-85c2-d51276bbf1d1(SignalingStuffByUsingSounds)" version="0" />
   </dependencyVersions>
 </solution>
 

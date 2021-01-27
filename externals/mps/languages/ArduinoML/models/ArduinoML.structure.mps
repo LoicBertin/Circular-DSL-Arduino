@@ -235,6 +235,7 @@
   <node concept="AxPO7" id="4Zcn436Uq6A">
     <property role="3F6X1D" value="5750072257530143142" />
     <property role="TrG5h" value="DURATION" />
+    <property role="PDuV0" value="true" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
     <node concept="M4N5e" id="4Zcn436Uq6B" role="M5hS2">
       <property role="1uS6qv" value="500" />
