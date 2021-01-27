@@ -175,6 +175,16 @@
       <property role="TrG5h" value="note" />
       <ref role="AX2Wp" node="523yQtkiLDV" resolve="NOTE" />
     </node>
+    <node concept="1TJgyi" id="4Zcn436Uq84" role="1TKVEl">
+      <property role="IQ2nx" value="5750072257530143236" />
+      <property role="TrG5h" value="duration" />
+      <ref role="AX2Wp" node="4Zcn436Uq6A" resolve="DURATION" />
+    </node>
+    <node concept="1TJgyi" id="4Zcn436Uq87" role="1TKVEl">
+      <property role="IQ2nx" value="5750072257530143239" />
+      <property role="TrG5h" value="number_of_iteration" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7MJqHN8DLcQ">
     <property role="EcuMT" value="8984517278119170870" />
@@ -220,6 +230,20 @@
     <node concept="M4N5e" id="523yQtkj5Bi" role="M5hS2">
       <property role="1uS6qo" value="LOW" />
       <property role="1uS6qv" value="false" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="4Zcn436Uq6A">
+    <property role="3F6X1D" value="5750072257530143142" />
+    <property role="TrG5h" value="DURATION" />
+    <property role="PDuV0" value="true" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="4Zcn436Uq6B" role="M5hS2">
+      <property role="1uS6qv" value="500" />
+      <property role="1uS6qo" value="short" />
+    </node>
+    <node concept="M4N5e" id="4Zcn436Uq6H" role="M5hS2">
+      <property role="1uS6qo" value="long" />
+      <property role="1uS6qv" value="2000" />
     </node>
   </node>
 </model>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:701d26ce-f6f2-4dd4-9cc6-205e96a776e8(ArduinoML.sandbox)">
+<model ref="r:701d26ce-f6f2-4dd4-9cc6-205e96a776e8(ArduinoML)">
   <persistence version="9" />
   <languages>
     <use id="ff891c49-8252-4f1c-9fc8-0e548a033e45" name="ArduinoML" version="0" />
@@ -35,6 +35,8 @@
         <reference id="8995722191379911801" name="sensor" index="2fAQRi" />
       </concept>
       <concept id="8984517278119170831" name="ArduinoML.structure.AnalogicAction" flags="ng" index="2O27Bj">
+        <property id="5750072257530143236" name="duration" index="299vT4" />
+        <property id="5750072257530143239" name="number_of_iteration" index="299vT7" />
         <property id="8984517278119170857" name="note" index="2O27BP" />
       </concept>
       <concept id="8984517278119170870" name="ArduinoML.structure.DigitalAction" flags="ng" index="2O27BE">
@@ -66,6 +68,8 @@
       </node>
       <node concept="2O27Bj" id="523yQtkkowC" role="2fAQP_">
         <property role="2O27BP" value="523yQtkiLLd/220" />
+        <property role="299vT7" value="1" />
+        <property role="299vT4" value="4Zcn436Uq6B/500" />
         <ref role="2fAQGV" node="523yQtkkomj" resolve="buzzer" />
       </node>
       <node concept="2O27BE" id="523yQtkkoxY" role="2fAQP_">
@@ -83,94 +87,6 @@
     </node>
     <node concept="2f$o0o" id="523yQtkkop7" role="2f$o0u">
       <property role="TrG5h" value="red_led" />
-      <property role="2f$o0r" value="12" />
-    </node>
-  </node>
-  <node concept="2f$o0v" id="523yQtkkMmz">
-    <property role="TrG5h" value="MultiStateAlarm" />
-    <ref role="2fAQMJ" node="523yQtkkMm_" resolve="off" />
-    <node concept="2f$o0p" id="523yQtkkMmV" role="2f$o0u">
-      <property role="TrG5h" value="button" />
-      <property role="2f$o0r" value="8" />
-    </node>
-    <node concept="2f$o0o" id="523yQtkkMng" role="2f$o0u">
-      <property role="TrG5h" value="buzzer" />
-      <property role="2f$o0r" value="11" />
-    </node>
-    <node concept="2f$o0o" id="523yQtkkMnH" role="2f$o0u">
-      <property role="TrG5h" value="led" />
-      <property role="2f$o0r" value="12" />
-    </node>
-    <node concept="2fAQJg" id="523yQtkkMm_" role="2fAQME">
-      <property role="TrG5h" value="off" />
-      <node concept="2fAQRq" id="523yQtkkMmA" role="2fAQPV">
-        <property role="2fAQRs" value="523yQtkj5zp/true" />
-        <ref role="2fAQRi" node="523yQtkkMmV" resolve="button" />
-        <ref role="2fAQRg" node="523yQtkkMoi" resolve="buzz" />
-      </node>
-      <node concept="2O27BE" id="523yQtkkMus" role="2fAQP_">
-        <property role="2O27Aq" value="523yQtkj5Bi/false" />
-        <ref role="2fAQGV" node="523yQtkkMnH" resolve="led" />
-      </node>
-    </node>
-    <node concept="2fAQJg" id="523yQtkkMoi" role="2fAQME">
-      <property role="TrG5h" value="buzz" />
-      <node concept="2fAQRq" id="523yQtkkMoj" role="2fAQPV">
-        <property role="2fAQRs" value="523yQtkj5zp/true" />
-        <ref role="2fAQRi" node="523yQtkkMmV" resolve="button" />
-        <ref role="2fAQRg" node="523yQtkkMq4" resolve="on" />
-      </node>
-      <node concept="2O27Bj" id="523yQtkkMvk" role="2fAQP_">
-        <property role="2O27BP" value="523yQtkiLLd/220" />
-        <ref role="2fAQGV" node="523yQtkkMng" resolve="buzzer" />
-      </node>
-    </node>
-    <node concept="2fAQJg" id="523yQtkkMq4" role="2fAQME">
-      <property role="TrG5h" value="on" />
-      <node concept="2fAQRq" id="523yQtkkMq5" role="2fAQPV">
-        <property role="2fAQRs" value="523yQtkj5zp/true" />
-        <ref role="2fAQRi" node="523yQtkkMmV" resolve="button" />
-        <ref role="2fAQRg" node="523yQtkkMm_" resolve="off" />
-      </node>
-      <node concept="2O27BE" id="523yQtkkMwc" role="2fAQP_">
-        <property role="2O27Aq" value="523yQtkj5zp/true" />
-        <ref role="2fAQGV" node="523yQtkkMnH" resolve="led" />
-      </node>
-    </node>
-  </node>
-  <node concept="2f$o0v" id="523yQtkkMyv">
-    <property role="TrG5h" value="StateBasedAlarm" />
-    <ref role="2fAQMJ" node="523yQtkkMyx" resolve="off" />
-    <node concept="2fAQJg" id="523yQtkkMyx" role="2fAQME">
-      <property role="TrG5h" value="off" />
-      <node concept="2fAQRq" id="523yQtkkMyy" role="2fAQPV">
-        <property role="2fAQRs" value="523yQtkj5zp/true" />
-        <ref role="2fAQRi" node="523yQtkkMyR" resolve="button" />
-        <ref role="2fAQRg" node="523yQtkkMza" resolve="on" />
-      </node>
-      <node concept="2O27BE" id="523yQtkkMzg" role="2fAQP_">
-        <property role="2O27Aq" value="523yQtkj5Bi/false" />
-        <ref role="2fAQGV" node="523yQtkkMyW" resolve="led" />
-      </node>
-    </node>
-    <node concept="2fAQJg" id="523yQtkkMza" role="2fAQME">
-      <property role="TrG5h" value="on" />
-      <node concept="2fAQRq" id="523yQtkkMzb" role="2fAQPV">
-        <property role="2fAQRs" value="523yQtkj5zp/true" />
-        <ref role="2fAQRi" node="523yQtkkMyR" resolve="button" />
-        <ref role="2fAQRg" node="523yQtkkMyx" resolve="off" />
-      </node>
-      <node concept="2O27BE" id="523yQtkkMzi" role="2fAQP_">
-        <property role="2O27Aq" value="523yQtkj5zp/true" />
-        <ref role="2fAQGV" node="523yQtkkMyW" resolve="led" />
-      </node>
-    </node>
-    <node concept="2f$o0p" id="523yQtkkMyR" role="2f$o0u">
-      <property role="TrG5h" value="button" />
-      <property role="2f$o0r" value="8" />
-    </node>
-    <node concept="2f$o0o" id="523yQtkkMyW" role="2f$o0u">
-      <property role="TrG5h" value="led" />
       <property role="2f$o0r" value="12" />
     </node>
   </node>
