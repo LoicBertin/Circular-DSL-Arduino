@@ -177,15 +177,15 @@
       <ref role="3lhOvi" node="7NneqJNi3_p" resolve="map_App" />
     </node>
     <node concept="3aamgX" id="7MJqHN8DM5J" role="3acgRq">
-      <ref role="30HIoZ" to="hkcw:7MJqHN8DLcf" resolve="Buzz" />
+      <ref role="30HIoZ" to="hkcw:7MJqHN8DLcf" resolve="AnalogicAction" />
       <node concept="j$656" id="7MJqHN8DM5Z" role="1lVwrX">
-        <ref role="v9R2y" node="7MJqHN8DM5X" resolve="reduce_Buzz" />
+        <ref role="v9R2y" node="7MJqHN8DM5X" resolve="reduce_AnalogicAction" />
       </node>
     </node>
     <node concept="3aamgX" id="7MJqHN8DUHx" role="3acgRq">
-      <ref role="30HIoZ" to="hkcw:7MJqHN8DLcQ" resolve="LedOnOff" />
+      <ref role="30HIoZ" to="hkcw:7MJqHN8DLcQ" resolve="DigitalAction" />
       <node concept="j$656" id="7MJqHN8DUHN" role="1lVwrX">
-        <ref role="v9R2y" node="7MJqHN8DUHL" resolve="reduce_LedOnOff" />
+        <ref role="v9R2y" node="7MJqHN8DUHL" resolve="reduce_DigitalAction" />
       </node>
     </node>
     <node concept="3aamgX" id="1rvEIeabz8o" role="3acgRq">
@@ -834,8 +834,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="7MJqHN8DM5X">
-    <property role="TrG5h" value="reduce_Buzz" />
-    <ref role="3gUMe" to="hkcw:7MJqHN8DLcf" resolve="Buzz" />
+    <property role="TrG5h" value="reduce_AnalogicAction" />
+    <ref role="3gUMe" to="hkcw:7MJqHN8DLcf" resolve="AnalogicAction" />
     <node concept="9aQIb" id="7MJqHN8DM67" role="13RCb5">
       <node concept="3clFbS" id="7MJqHN8DM68" role="9aQI4">
         <node concept="raruj" id="7MJqHN8DM8s" role="lGtFl" />
@@ -963,8 +963,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="7MJqHN8DUHL">
-    <property role="TrG5h" value="reduce_LedOnOff" />
-    <ref role="3gUMe" to="hkcw:7MJqHN8DLcQ" resolve="LedOnOff" />
+    <property role="TrG5h" value="reduce_DigitalAction" />
+    <ref role="3gUMe" to="hkcw:7MJqHN8DLcQ" resolve="DigitalAction" />
     <node concept="9aQIb" id="7MJqHN8DUHV" role="13RCb5">
       <node concept="3clFbS" id="7MJqHN8DUHW" role="9aQI4">
         <node concept="raruj" id="7MJqHN8DUI1" role="lGtFl" />

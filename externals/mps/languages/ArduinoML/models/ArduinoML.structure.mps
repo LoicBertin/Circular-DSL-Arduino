@@ -151,7 +151,7 @@
     <node concept="1TJgyi" id="7NneqJNj5hR" role="1TKVEl">
       <property role="IQ2nx" value="8995722191379911799" />
       <property role="TrG5h" value="status" />
-      <ref role="AX2Wp" node="523yQtkj5zo" resolve="STATUS" />
+      <ref role="AX2Wp" node="523yQtkj5zo" resolve="SIGNAL" />
     </node>
     <node concept="1TJgyj" id="7NneqJNj5hT" role="1TKVEi">
       <property role="IQ2ns" value="8995722191379911801" />
@@ -168,7 +168,7 @@
   </node>
   <node concept="1TIwiD" id="7MJqHN8DLcf">
     <property role="EcuMT" value="8984517278119170831" />
-    <property role="TrG5h" value="Buzz" />
+    <property role="TrG5h" value="AnalogicAction" />
     <ref role="1TJDcQ" node="7NneqJNj5aa" resolve="Action" />
     <node concept="1TJgyi" id="7MJqHN8DLcD" role="1TKVEl">
       <property role="IQ2nx" value="8984517278119170857" />
@@ -178,12 +178,12 @@
   </node>
   <node concept="1TIwiD" id="7MJqHN8DLcQ">
     <property role="EcuMT" value="8984517278119170870" />
-    <property role="TrG5h" value="LedOnOff" />
+    <property role="TrG5h" value="DigitalAction" />
     <ref role="1TJDcQ" node="7NneqJNj5aa" resolve="Action" />
     <node concept="1TJgyi" id="7MJqHN8DLd6" role="1TKVEl">
       <property role="IQ2nx" value="8984517278119170886" />
       <property role="TrG5h" value="status" />
-      <ref role="AX2Wp" node="523yQtkj5zo" resolve="STATUS" />
+      <ref role="AX2Wp" node="523yQtkj5zo" resolve="SIGNAL" />
     </node>
   </node>
   <node concept="AxPO7" id="523yQtkiLDV">
@@ -210,7 +210,7 @@
   </node>
   <node concept="AxPO7" id="523yQtkj5zo">
     <property role="3F6X1D" value="5801634020895512792" />
-    <property role="TrG5h" value="STATUS" />
+    <property role="TrG5h" value="SIGNAL" />
     <property role="PDuV0" value="true" />
     <ref role="M4eZT" to="tpck:fKAQMTB" resolve="boolean" />
     <node concept="M4N5e" id="523yQtkj5zp" role="M5hS2">

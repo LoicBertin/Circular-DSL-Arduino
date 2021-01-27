@@ -34,10 +34,10 @@
         <reference id="8995722191379911803" name="target" index="2fAQRg" />
         <reference id="8995722191379911801" name="sensor" index="2fAQRi" />
       </concept>
-      <concept id="8984517278119170831" name="ArduinoML.structure.Buzz" flags="ng" index="2O27Bj">
+      <concept id="8984517278119170831" name="ArduinoML.structure.AnalogicAction" flags="ng" index="2O27Bj">
         <property id="8984517278119170857" name="note" index="2O27BP" />
       </concept>
-      <concept id="8984517278119170870" name="ArduinoML.structure.LedOnOff" flags="ng" index="2O27BE">
+      <concept id="8984517278119170870" name="ArduinoML.structure.DigitalAction" flags="ng" index="2O27BE">
         <property id="8984517278119170886" name="status" index="2O27Aq" />
       </concept>
     </language>

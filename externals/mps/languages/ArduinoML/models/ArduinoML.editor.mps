@@ -153,7 +153,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7MJqHN8DLdH">
-    <ref role="1XX52x" to="hkcw:7MJqHN8DLcQ" resolve="LedOnOff" />
+    <ref role="1XX52x" to="hkcw:7MJqHN8DLcQ" resolve="DigitalAction" />
     <node concept="3EZMnI" id="7MJqHN8DLdY" role="2wV5jI">
       <node concept="2iRfu4" id="7MJqHN8DLdZ" role="2iSdaV" />
       <node concept="1iCGBv" id="7MJqHN8DLfJ" role="3EZMnx">
@@ -174,7 +174,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7MJqHN8DLj2">
-    <ref role="1XX52x" to="hkcw:7MJqHN8DLcf" resolve="Buzz" />
+    <ref role="1XX52x" to="hkcw:7MJqHN8DLcf" resolve="AnalogicAction" />
     <node concept="3EZMnI" id="7MJqHN8DLj4" role="2wV5jI">
       <node concept="2iRfu4" id="7MJqHN8DLj5" role="2iSdaV" />
       <node concept="1iCGBv" id="7MJqHN8Egx7" role="3EZMnx">
