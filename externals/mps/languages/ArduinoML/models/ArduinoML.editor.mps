@@ -166,7 +166,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7MJqHN8DLhe" role="3EZMnx">
-        <property role="3F0ifm" value="&lt;=" />
+        <property role="3F0ifm" value="becomes" />
       </node>
       <node concept="3F0A7n" id="7MJqHN8DLhI" role="3EZMnx">
         <ref role="1NtTu8" to="hkcw:7MJqHN8DLd6" resolve="status" />

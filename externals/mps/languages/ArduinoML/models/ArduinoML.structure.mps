@@ -203,18 +203,18 @@
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="523yQtkiLDW" role="M5hS2">
       <property role="1uS6qv" value="262" />
-      <property role="1uS6qo" value="NOTE_C4" />
+      <property role="1uS6qo" value="C4" />
     </node>
     <node concept="M4N5e" id="523yQtkiLJJ" role="M5hS2">
-      <property role="1uS6qo" value="NOTE_G3" />
+      <property role="1uS6qo" value="G3" />
       <property role="1uS6qv" value="196" />
     </node>
     <node concept="M4N5e" id="523yQtkiLLd" role="M5hS2">
-      <property role="1uS6qo" value="NOTE_A3" />
+      <property role="1uS6qo" value="A3" />
       <property role="1uS6qv" value="220" />
     </node>
     <node concept="M4N5e" id="523yQtkiLMh" role="M5hS2">
-      <property role="1uS6qo" value="NOTE_B3" />
+      <property role="1uS6qo" value="B3" />
       <property role="1uS6qv" value="247" />
     </node>
   </node>
