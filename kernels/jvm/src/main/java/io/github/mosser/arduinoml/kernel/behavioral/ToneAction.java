@@ -4,6 +4,11 @@ import io.github.mosser.arduinoml.kernel.generator.Visitor;
 
 public class ToneAction extends Action {
     private NOTE note;
+    private DURATION duration;
+
+    public ToneAction(){
+        this.setNumberOfIteration(1);
+    }
 
     public NOTE getNote() {
         return this.note;
@@ -11,6 +16,14 @@ public class ToneAction extends Action {
 
     public void setNote(NOTE note) {
         this.note = note;
+    }
+
+    public DURATION getDuration(){
+        return this.duration;
+    }
+
+    public void setDuration(DURATION duration){
+        this.duration = duration;
     }
 
     @Override

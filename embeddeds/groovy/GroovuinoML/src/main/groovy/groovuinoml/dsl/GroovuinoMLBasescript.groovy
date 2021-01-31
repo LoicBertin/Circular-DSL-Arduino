@@ -3,6 +3,7 @@ package main.groovy.groovuinoml.dsl
 import io.github.mosser.arduinoml.kernel.behavioral.DigitalAction
 import io.github.mosser.arduinoml.kernel.behavioral.LOGICAL
 import io.github.mosser.arduinoml.kernel.behavioral.NOTE
+import io.github.mosser.arduinoml.kernel.behavioral.DURATION
 import io.github.mosser.arduinoml.kernel.behavioral.ToneAction
 
 import java.util.List;
@@ -35,7 +36,7 @@ abstract class GroovuinoMLBasescript extends Script {
 		((GroovuinoMLBinding) this.getBinding()).getGroovuinoMLModel().createState(name, actions)
 		// recursive closure to allow multiple and statements
 		def closure
-		closure = { actuator -> 
+		closure = { actuator ->
 			[becomes: { signal ->
 				DigitalAction action = new DigitalAction()
 				action.setActuator(actuator instanceof String ? (Actuator)((GroovuinoMLBinding)this.getBinding()).getVariable(actuator) : (Actuator)actuator)
@@ -43,13 +44,21 @@ abstract class GroovuinoMLBasescript extends Script {
 				actions.add(action)
 				[and: closure]
 			},
-			plays: { note ->
+			 plays: { note ->
 				ToneAction action = new ToneAction()
 				action.setActuator(actuator instanceof String ? (Actuator)((GroovuinoMLBinding)this.getBinding()).getVariable(actuator) : (Actuator)actuator)
 				action.setNote(note instanceof String ? (NOTE)((GroovuinoMLBinding)this.getBinding()).getVariable(note) : (NOTE)note)
 				actions.add(action)
-				[and: closure]
-			}]
+				[and: closure,
+				for : { duration ->
+					[duration : { time ->
+						actions.get(actions.size() - 1).setDuration(duration instanceof String ? (DURATION) ((GroovuinoMLBinding) this.getBinding()).getVariable(duration) : (DURATION) duration)
+						println("time = " + time)
+						int iterationMax = (int) time
+						actions.get(actions.size() - 1).setNumberOfIteration(time)
+					}]
+				}]
+			 }]
 		}
 		[means: closure]
 	}

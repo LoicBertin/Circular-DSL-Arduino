@@ -161,7 +161,13 @@ public class ToWiring extends Visitor<StringBuffer> {
 			return;
 		}
 		if(context.get("pass") == PASS.TWO) {
-			w(String.format("\t\t\tdigitalWrite(%d,%s);\n",action.getActuator().getPin(), action.getSignal()));
+			if(action.getNumberOfIteration() > 1){
+				w(String.format("\t\t\tfor (i = 0; i<%d; i++) {\n", action.getNumberOfIteration()));
+				w(String.format("\t\t\t\tdigitalWrite(%d,%s);\n",action.getActuator().getPin(), action.getSignal()));
+				w(String.format("\t\t\t}\n"));
+			}else{
+				w(String.format("\t\t\tdigitalWrite(%d,%s);\n",action.getActuator().getPin(), action.getSignal()));
+			}
 			return;
 		}
 	}
@@ -172,16 +178,37 @@ public class ToWiring extends Visitor<StringBuffer> {
 			return;
 		}
 		if(context.get("pass") == PASS.TWO) {
-			System.out.println(action);
-			System.out.println("---------------");
-			System.out.println(NOTE.STOP);
-			System.out.println("---------------");
-			System.out.println(action.getNote());
-			if(!action.getNote().equals(NOTE.STOP)){
-				w(String.format("\t\t\ttone(%s, %d, 100);\n", action.getActuator().getPin(), noteConverter(action.getNote())));
+			if(action.getNumberOfIteration() == 1){
+				if(!action.getNote().equals(NOTE.STOP)){
+					if(action.getDuration() == null){
+						w(String.format("\t\t\ttone(%s, %d, 100);\n", action.getActuator().getPin(), noteConverter(action.getNote())));
+					}else{
+						w(String.format("\t\t\ttone(%s, %d, %d);\n", action.getActuator().getPin(), noteConverter(action.getNote()), timeConverter(action.getDuration())));
+					}
+				}else{
+					w(String.format("\t\t\tnoTone(%s);\n", action.getActuator().getPin()));
+				}
 			}else{
-				w(String.format("\t\t\tnoTone(%s);\n", action.getActuator().getPin()));
+				w(String.format("\t\t\tfor (i = 0; i<%d; i++) {\n", action.getNumberOfIteration()));
+				if(action.getDuration() == null){
+					w(String.format("\t\t\t\ttone(%s, %d, 100);\n", action.getActuator().getPin(), noteConverter(action.getNote())));
+					w(String.format("\t\t\t\tdelay(100);\n"));
+				}else{
+					w(String.format("\t\t\t\ttone(%s, %d, %d);\n", action.getActuator().getPin(), noteConverter(action.getNote()), timeConverter(action.getDuration())));
+					w(String.format("\t\t\t\tdelay(%d);\n",timeConverter(action.getDuration())));
+				}
+				w(String.format("\t\t\t}\n"));
 			}
+		}
+	}
+
+	public int timeConverter(DURATION duration){
+		switch (duration) {
+			case SHORT:
+				return 500;
+			case LONG:
+				return 2000;
+			default: return 500;
 		}
 	}
 

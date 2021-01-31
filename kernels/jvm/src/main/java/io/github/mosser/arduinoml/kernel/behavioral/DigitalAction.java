@@ -6,6 +6,10 @@ import io.github.mosser.arduinoml.kernel.structural.SIGNAL;
 public class DigitalAction extends Action {
     private SIGNAL signal;
 
+    public DigitalAction(){
+        this.setNumberOfIteration(1);
+    }
+
     public SIGNAL getSignal() {
         return signal;
     }
