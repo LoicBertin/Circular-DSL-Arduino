@@ -65,6 +65,12 @@
         <property role="299vT4" value="4Zcn436Uq6B/500" />
         <ref role="2fAQGV" node="4C32DkkHJZQ" resolve="buzzer" />
       </node>
+      <node concept="2O27Bj" id="WXi2HZuaYy" role="2fAQP_">
+        <property role="2O27BP" value="WXi2HZtttN/-1" />
+        <property role="299vT4" value="4Zcn436Uq6B/500" />
+        <property role="299vT7" value="1" />
+        <ref role="2fAQGV" node="4C32DkkHJZQ" resolve="buzzer" />
+      </node>
     </node>
     <node concept="2fAQJg" id="3_11XBKdI6" role="2fAQME">
       <property role="TrG5h" value="finished" />
@@ -76,6 +82,12 @@
       <node concept="2O27Bj" id="3_11XBKdJW" role="2fAQP_">
         <property role="2O27BP" value="523yQtkiLDW/262" />
         <property role="299vT4" value="4Zcn436Uq6H/2000" />
+        <property role="299vT7" value="1" />
+        <ref role="2fAQGV" node="4C32DkkHJZQ" resolve="buzzer" />
+      </node>
+      <node concept="2O27Bj" id="WXi2HZub0K" role="2fAQP_">
+        <property role="2O27BP" value="WXi2HZtttN/-1" />
+        <property role="299vT4" value="4Zcn436Uq6B/500" />
         <property role="299vT7" value="1" />
         <ref role="2fAQGV" node="4C32DkkHJZQ" resolve="buzzer" />
       </node>

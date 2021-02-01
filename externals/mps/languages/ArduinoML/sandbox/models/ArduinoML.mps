@@ -49,6 +49,12 @@
     <ref role="2fAQMJ" node="523yQtkk7t6" resolve="off" />
     <node concept="2fAQJg" id="523yQtkk7t6" role="2fAQME">
       <property role="TrG5h" value="off" />
+      <node concept="2O27Bj" id="WXi2HZub3z" role="2fAQP_">
+        <property role="2O27BP" value="WXi2HZtttN/-1" />
+        <property role="299vT4" value="4Zcn436Uq6B/500" />
+        <property role="299vT7" value="1" />
+        <ref role="2fAQGV" node="523yQtkkomj" resolve="buzzer" />
+      </node>
       <node concept="2fAQRq" id="523yQtkk7t7" role="2fAQPV">
         <property role="2fAQRs" value="523yQtkj5zp/true" />
         <ref role="2fAQRi" node="523yQtkk7yi" resolve="button" />

@@ -217,6 +217,10 @@
       <property role="1uS6qo" value="B3" />
       <property role="1uS6qv" value="247" />
     </node>
+    <node concept="M4N5e" id="WXi2HZtttN" role="M5hS2">
+      <property role="1uS6qo" value="STOP" />
+      <property role="1uS6qv" value="-1" />
+    </node>
   </node>
   <node concept="AxPO7" id="523yQtkj5zo">
     <property role="3F6X1D" value="5801634020895512792" />

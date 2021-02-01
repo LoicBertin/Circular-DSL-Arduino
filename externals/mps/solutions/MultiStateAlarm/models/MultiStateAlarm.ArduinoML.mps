@@ -87,6 +87,12 @@
     </node>
     <node concept="2fAQJg" id="4C32DkkHKLh" role="2fAQME">
       <property role="TrG5h" value="on" />
+      <node concept="2O27Bj" id="WXi2HZuaWf" role="2fAQP_">
+        <property role="2O27BP" value="WXi2HZtttN/-1" />
+        <property role="299vT4" value="4Zcn436Uq6B/500" />
+        <property role="299vT7" value="1" />
+        <ref role="2fAQGV" node="4C32DkkHKFU" resolve="buzzer" />
+      </node>
       <node concept="2fAQRq" id="4C32DkkHKLi" role="2fAQPV">
         <property role="2fAQRs" value="523yQtkj5zp/true" />
         <ref role="2fAQRi" node="4C32DkkHKDH" resolve="button" />
