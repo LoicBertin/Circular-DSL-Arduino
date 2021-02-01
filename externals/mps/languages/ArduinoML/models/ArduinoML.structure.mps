@@ -128,8 +128,13 @@
       <property role="IQ2ns" value="8995722191379911888" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="transition" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7NneqJNj5hL" resolve="Transition" />
+    </node>
+    <node concept="1TJgyj" id="1JJF8PnPfrq" role="1TKVEi">
+      <property role="IQ2ns" value="2013017281521841882" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dualTransition" />
+      <ref role="20lvS9" node="1JJF8PnPfqo" resolve="DualTransition" />
     </node>
   </node>
   <node concept="1TIwiD" id="7NneqJNj5aa">
@@ -248,6 +253,39 @@
     <node concept="M4N5e" id="4Zcn436Uq6H" role="M5hS2">
       <property role="1uS6qo" value="long" />
       <property role="1uS6qv" value="2000" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1JJF8PnPfqo">
+    <property role="EcuMT" value="2013017281521841816" />
+    <property role="TrG5h" value="DualTransition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1JJF8PnPfqp" role="1TKVEl">
+      <property role="IQ2nx" value="2013017281521841817" />
+      <property role="TrG5h" value="status1" />
+      <ref role="AX2Wp" node="523yQtkj5zo" resolve="SIGNAL" />
+    </node>
+    <node concept="1TJgyi" id="1JJF8PnPfqs" role="1TKVEl">
+      <property role="IQ2nx" value="2013017281521841820" />
+      <property role="TrG5h" value="status2" />
+      <ref role="AX2Wp" node="523yQtkj5zo" resolve="SIGNAL" />
+    </node>
+    <node concept="1TJgyj" id="1JJF8PnPfqq" role="1TKVEi">
+      <property role="IQ2ns" value="2013017281521841818" />
+      <property role="20kJfa" value="sensor1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7NneqJNhFAM" resolve="Sensor" />
+    </node>
+    <node concept="1TJgyj" id="1JJF8PnPfqv" role="1TKVEi">
+      <property role="IQ2ns" value="2013017281521841823" />
+      <property role="20kJfa" value="sensor2" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7NneqJNhFAM" resolve="Sensor" />
+    </node>
+    <node concept="1TJgyj" id="1JJF8PnPfqr" role="1TKVEi">
+      <property role="IQ2ns" value="2013017281521841819" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7NneqJNj59V" resolve="State" />
     </node>
   </node>
 </model>
