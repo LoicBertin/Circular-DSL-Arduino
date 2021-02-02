@@ -41,6 +41,7 @@
         <property id="8984517278119170857" name="note" index="2O27BP" />
       </concept>
       <concept id="2013017281521841816" name="ArduinoML.structure.DualTransition" flags="ng" index="1cePCl">
+        <property id="8877923659213691690" name="logical" index="2pgQeH" />
         <property id="2013017281521841820" name="status2" index="1cePCh" />
         <property id="2013017281521841817" name="status1" index="1cePCk" />
         <reference id="2013017281521841823" name="sensor2" index="1cePCi" />
@@ -54,15 +55,15 @@
     <ref role="2fAQMJ" node="1JJF8PnPfpR" resolve="off" />
     <node concept="2f$o0p" id="1JJF8PnPfpT" role="2f$o0u">
       <property role="TrG5h" value="button" />
-      <property role="2f$o0r" value="8" />
+      <property role="2f$o0r" value="9" />
     </node>
     <node concept="2f$o0p" id="1JJF8PnPfq5" role="2f$o0u">
-      <property role="TrG5h" value="button" />
-      <property role="2f$o0r" value="9" />
+      <property role="TrG5h" value="button2" />
+      <property role="2f$o0r" value="10" />
     </node>
     <node concept="2f$o0o" id="1JJF8PnPfqd" role="2f$o0u">
       <property role="TrG5h" value="buzzer" />
-      <property role="2f$o0r" value="11" />
+      <property role="2f$o0r" value="13" />
     </node>
     <node concept="2fAQJg" id="1JJF8PnPfpR" role="2fAQME">
       <property role="TrG5h" value="off" />
@@ -75,8 +76,9 @@
       <node concept="1cePCl" id="1JJF8PnPOZc" role="1cePDn">
         <property role="1cePCk" value="523yQtkj5zp/true" />
         <property role="1cePCh" value="523yQtkj5zp/true" />
+        <property role="2pgQeH" value="7GOI8vytXGe/&amp;&amp;" />
         <ref role="1cePCn" node="1JJF8PnPfpT" resolve="button" />
-        <ref role="1cePCi" node="1JJF8PnPfq5" resolve="button" />
+        <ref role="1cePCi" node="1JJF8PnPfq5" resolve="button2" />
         <ref role="1cePCm" node="1JJF8PnPfqi" resolve="on" />
       </node>
     </node>
@@ -89,15 +91,15 @@
       </node>
       <node concept="2O27Bj" id="1JJF8PnPOZe" role="2fAQP_">
         <property role="2O27BP" value="523yQtkiLLd/220" />
-        <property role="299vT4" value="4Zcn436Uq6B/500" />
         <property role="299vT7" value="1" />
         <ref role="2fAQGV" node="1JJF8PnPfqd" resolve="buzzer" />
       </node>
       <node concept="1cePCl" id="1JJF8PnPP00" role="1cePDn">
         <property role="1cePCk" value="523yQtkj5zp/true" />
         <property role="1cePCh" value="523yQtkj5Bi/false" />
+        <property role="2pgQeH" value="7GOI8vytXGn/(+)" />
         <ref role="1cePCn" node="1JJF8PnPfpT" resolve="button" />
-        <ref role="1cePCi" node="1JJF8PnPfq5" resolve="button" />
+        <ref role="1cePCi" node="1JJF8PnPfq5" resolve="button2" />
         <ref role="1cePCm" node="1JJF8PnPfpR" resolve="off" />
       </node>
     </node>

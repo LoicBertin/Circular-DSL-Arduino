@@ -232,14 +232,14 @@
     <property role="3F6X1D" value="5801634020895512792" />
     <property role="TrG5h" value="SIGNAL" />
     <property role="PDuV0" value="true" />
-    <ref role="M4eZT" to="tpck:fKAQMTB" resolve="boolean" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="523yQtkj5zp" role="M5hS2">
-      <property role="1uS6qv" value="true" />
       <property role="1uS6qo" value="HIGH" />
+      <property role="1uS6qv" value="HIGH" />
     </node>
     <node concept="M4N5e" id="523yQtkj5Bi" role="M5hS2">
       <property role="1uS6qo" value="LOW" />
-      <property role="1uS6qv" value="false" />
+      <property role="1uS6qv" value="LOW" />
     </node>
   </node>
   <node concept="AxPO7" id="4Zcn436Uq6A">
@@ -274,6 +274,11 @@
       <property role="TrG5h" value="status2" />
       <ref role="AX2Wp" node="523yQtkj5zo" resolve="SIGNAL" />
     </node>
+    <node concept="1TJgyi" id="7GOI8vytXGE" role="1TKVEl">
+      <property role="IQ2nx" value="8877923659213691690" />
+      <property role="TrG5h" value="logical" />
+      <ref role="AX2Wp" node="7GOI8vytXGd" resolve="LOGICAL" />
+    </node>
     <node concept="1TJgyj" id="1JJF8PnPfqq" role="1TKVEi">
       <property role="IQ2ns" value="2013017281521841818" />
       <property role="20kJfa" value="sensor1" />
@@ -291,6 +296,24 @@
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7NneqJNj59V" resolve="State" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="7GOI8vytXGd">
+    <property role="3F6X1D" value="8877923659213691661" />
+    <property role="TrG5h" value="LOGICAL" />
+    <property role="PDuV0" value="true" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="7GOI8vytXGe" role="M5hS2">
+      <property role="1uS6qv" value="&amp;&amp;" />
+      <property role="1uS6qo" value="and" />
+    </node>
+    <node concept="M4N5e" id="7GOI8vytXGk" role="M5hS2">
+      <property role="1uS6qo" value="or" />
+      <property role="1uS6qv" value="||" />
+    </node>
+    <node concept="M4N5e" id="7GOI8vytXGn" role="M5hS2">
+      <property role="1uS6qo" value="xor" />
+      <property role="1uS6qv" value="xor" />
     </node>
   </node>
 </model>

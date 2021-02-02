@@ -236,8 +236,8 @@
       <node concept="3F0A7n" id="1JJF8PnPfr_" role="3EZMnx">
         <ref role="1NtTu8" to="hkcw:1JJF8PnPfqp" resolve="status1" />
       </node>
-      <node concept="3F0ifn" id="1JJF8PnPfrP" role="3EZMnx">
-        <property role="3F0ifm" value="and" />
+      <node concept="3F0A7n" id="7GOI8vytXGN" role="3EZMnx">
+        <ref role="1NtTu8" to="hkcw:7GOI8vytXGE" resolve="logical" />
       </node>
       <node concept="1iCGBv" id="1JJF8PnPfsd" role="3EZMnx">
         <ref role="1NtTu8" to="hkcw:1JJF8PnPfqv" resolve="sensor2" />
