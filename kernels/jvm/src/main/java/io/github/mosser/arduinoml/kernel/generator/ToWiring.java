@@ -140,6 +140,10 @@ public class ToWiring extends Visitor<StringBuffer> {
 					} else if (transition.getLogical().equals(LOGICAL.AND)) {
 						w(String.format("digitalRead(%d) == %s && %sBounceGuard && ",
 								sensor.getPin(), transition.getValue(), sensorName));
+					} else if (transition.getLogical().equals(LOGICAL.XOR)) {
+						w(String.format("(digitalRead(%d) == %d && %sBounceGuard || digitalRead(%d) == %s && %sBounceGuard) ",
+								sensor.getPin(), transition.getValue(), sensorName,
+								sensor.getPin(), invertSignal(transition.getValue()), sensorName));
 					}
 				}
 			}
@@ -162,7 +166,7 @@ public class ToWiring extends Visitor<StringBuffer> {
 		}
 		if(context.get("pass") == PASS.TWO) {
 			if(action.getNumberOfIteration() > 1){
-				w(String.format("\t\t\tfor (i = 0; i<%d; i++) {\n", action.getNumberOfIteration()));
+				w(String.format("\t\t\tfor (int i = 0; i<%d; i++) {\n", action.getNumberOfIteration()));
 				w(String.format("\t\t\t\tdigitalWrite(%d,%s);\n",action.getActuator().getPin(), action.getSignal()));
 				w(String.format("\t\t\t}\n"));
 			}else{
@@ -184,18 +188,19 @@ public class ToWiring extends Visitor<StringBuffer> {
 						w(String.format("\t\t\ttone(%s, %d, 100);\n", action.getActuator().getPin(), noteConverter(action.getNote())));
 					}else{
 						w(String.format("\t\t\ttone(%s, %d, %d);\n", action.getActuator().getPin(), noteConverter(action.getNote()), timeConverter(action.getDuration())));
+						w(String.format("\t\t\t\tdelay(%d);\n",timeConverter(action.getDuration()) + 300));
 					}
 				}else{
 					w(String.format("\t\t\tnoTone(%s);\n", action.getActuator().getPin()));
 				}
 			}else{
-				w(String.format("\t\t\tfor (i = 0; i<%d; i++) {\n", action.getNumberOfIteration()));
+				w(String.format("\t\t\tfor (int i = 0; i<%d; i++) {\n", action.getNumberOfIteration()));
 				if(action.getDuration() == null){
 					w(String.format("\t\t\t\ttone(%s, %d, 100);\n", action.getActuator().getPin(), noteConverter(action.getNote())));
 					w(String.format("\t\t\t\tdelay(100);\n"));
 				}else{
 					w(String.format("\t\t\t\ttone(%s, %d, %d);\n", action.getActuator().getPin(), noteConverter(action.getNote()), timeConverter(action.getDuration())));
-					w(String.format("\t\t\t\tdelay(%d);\n",timeConverter(action.getDuration())));
+					w(String.format("\t\t\t\tdelay(%d);\n",timeConverter(action.getDuration()) + 300));
 				}
 				w(String.format("\t\t\t}\n"));
 			}
@@ -224,6 +229,14 @@ public class ToWiring extends Visitor<StringBuffer> {
 				return 247;
 			default:
 				return 0;
+		}
+	}
+
+	public SIGNAL invertSignal(SIGNAL signal) {
+		if (signal == SIGNAL.HIGH) {
+			return SIGNAL.LOW;
+		} else {
+			return SIGNAL.HIGH;
 		}
 	}
 }

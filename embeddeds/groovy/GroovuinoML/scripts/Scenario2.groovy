@@ -8,6 +8,6 @@ state "off" means buzzer plays STOP
 initial off
 
 from off to on when button and button2 becomes high
-from on to off when button or button2 becomes high
+from on to off when button xor button2 becomes high
 
 export "Rendu1Scenario2"
