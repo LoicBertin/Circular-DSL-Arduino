@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/ArduinoML/ArduinoML.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ArduinoML/sandbox/VerySimpleAlarm.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/DualCheckAlarm/DualCheckAlarm.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/MultiStateAlarm/MultiStateAlarm.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/SignalingStuffByUsingSounds/SignalingStuffByUsingSounds.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/StateBasedAlarm/StateBasedAlarm.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

@@ -20,3 +20,7 @@ site
 /system/
 /config/
 markdown-navigator**
+
+# Intellij Idea user workspace setting files
+**/.idea/workspace.xml
+**/.mps/workspace.xml
