@@ -17,6 +17,7 @@
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration_Old" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration_Old" flags="ig" index="M4N5e">
@@ -244,8 +245,8 @@
   <node concept="AxPO7" id="4Zcn436Uq6A">
     <property role="3F6X1D" value="5750072257530143142" />
     <property role="TrG5h" value="DURATION" />
-    <property role="PDuV0" value="true" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <ref role="Qgau1" node="7GOI8vyrZAM" />
     <node concept="M4N5e" id="4Zcn436Uq6B" role="M5hS2">
       <property role="1uS6qv" value="500" />
       <property role="1uS6qo" value="short" />
@@ -253,6 +254,10 @@
     <node concept="M4N5e" id="4Zcn436Uq6H" role="M5hS2">
       <property role="1uS6qo" value="long" />
       <property role="1uS6qv" value="2000" />
+    </node>
+    <node concept="M4N5e" id="7GOI8vyrZAM" role="M5hS2">
+      <property role="1uS6qo" value="ever" />
+      <property role="1uS6qv" value="-1" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JJF8PnPfqo">

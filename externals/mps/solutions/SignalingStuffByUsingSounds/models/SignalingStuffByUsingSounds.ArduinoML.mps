@@ -43,21 +43,21 @@
   </registry>
   <node concept="2f$o0v" id="4C32DkkHJVs">
     <property role="TrG5h" value="SignalingStuffByUsingSounds" />
-    <ref role="2fAQMJ" node="4C32DkkHK83" resolve="noBuzz" />
+    <ref role="2fAQMJ" node="4C32DkkHK83" resolve="off" />
     <node concept="2f$o0o" id="4C32DkkHJZQ" role="2f$o0u">
       <property role="TrG5h" value="buzzer" />
-      <property role="2f$o0r" value="11" />
+      <property role="2f$o0r" value="13" />
     </node>
     <node concept="2f$o0p" id="4C32DkkHK2T" role="2f$o0u">
       <property role="TrG5h" value="button" />
-      <property role="2f$o0r" value="8" />
+      <property role="2f$o0r" value="9" />
     </node>
     <node concept="2fAQJg" id="4C32DkkHJVu" role="2fAQME">
-      <property role="TrG5h" value="buzz" />
+      <property role="TrG5h" value="begin" />
       <node concept="2fAQRq" id="4C32DkkHJVv" role="2fAQPV">
-        <property role="2fAQRs" value="523yQtkj5zp/true" />
+        <property role="2fAQRs" value="523yQtkj5Bi/false" />
         <ref role="2fAQRi" node="4C32DkkHK2T" resolve="button" />
-        <ref role="2fAQRg" node="3_11XBKdI6" resolve="finished" />
+        <ref role="2fAQRg" node="7GOI8vytt7R" resolve="on" />
       </node>
       <node concept="2O27Bj" id="4C32DkkHK5U" role="2fAQP_">
         <property role="2O27BP" value="523yQtkiLLd/220" />
@@ -65,11 +65,13 @@
         <property role="299vT4" value="4Zcn436Uq6B/500" />
         <ref role="2fAQGV" node="4C32DkkHJZQ" resolve="buzzer" />
       </node>
-      <node concept="2O27Bj" id="WXi2HZuaYy" role="2fAQP_">
-        <property role="2O27BP" value="WXi2HZtttN/-1" />
-        <property role="299vT4" value="4Zcn436Uq6B/500" />
-        <property role="299vT7" value="1" />
-        <ref role="2fAQGV" node="4C32DkkHJZQ" resolve="buzzer" />
+    </node>
+    <node concept="2fAQJg" id="7GOI8vytt7R" role="2fAQME">
+      <property role="TrG5h" value="on" />
+      <node concept="2fAQRq" id="7GOI8vytt86" role="2fAQPV">
+        <property role="2fAQRs" value="523yQtkj5zp/true" />
+        <ref role="2fAQRi" node="4C32DkkHK2T" resolve="button" />
+        <ref role="2fAQRg" node="3_11XBKdI6" resolve="finished" />
       </node>
     </node>
     <node concept="2fAQJg" id="3_11XBKdI6" role="2fAQME">
@@ -77,7 +79,7 @@
       <node concept="2fAQRq" id="3_11XBKdI7" role="2fAQPV">
         <property role="2fAQRs" value="523yQtkj5Bi/false" />
         <ref role="2fAQRi" node="4C32DkkHK2T" resolve="button" />
-        <ref role="2fAQRg" node="4C32DkkHK83" resolve="noBuzz" />
+        <ref role="2fAQRg" node="4C32DkkHK83" resolve="off" />
       </node>
       <node concept="2O27Bj" id="3_11XBKdJW" role="2fAQP_">
         <property role="2O27BP" value="523yQtkiLDW/262" />
@@ -85,19 +87,13 @@
         <property role="299vT7" value="1" />
         <ref role="2fAQGV" node="4C32DkkHJZQ" resolve="buzzer" />
       </node>
-      <node concept="2O27Bj" id="WXi2HZub0K" role="2fAQP_">
-        <property role="2O27BP" value="WXi2HZtttN/-1" />
-        <property role="299vT4" value="4Zcn436Uq6B/500" />
-        <property role="299vT7" value="1" />
-        <ref role="2fAQGV" node="4C32DkkHJZQ" resolve="buzzer" />
-      </node>
     </node>
     <node concept="2fAQJg" id="4C32DkkHK83" role="2fAQME">
-      <property role="TrG5h" value="noBuzz" />
+      <property role="TrG5h" value="off" />
       <node concept="2fAQRq" id="4C32DkkHK84" role="2fAQPV">
         <property role="2fAQRs" value="523yQtkj5zp/true" />
         <ref role="2fAQRi" node="4C32DkkHK2T" resolve="button" />
-        <ref role="2fAQRg" node="4C32DkkHJVu" resolve="buzz" />
+        <ref role="2fAQRg" node="4C32DkkHJVu" resolve="begin" />
       </node>
     </node>
   </node>

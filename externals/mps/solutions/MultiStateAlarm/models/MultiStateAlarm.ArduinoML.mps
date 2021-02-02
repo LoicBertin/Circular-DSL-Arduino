@@ -49,11 +49,11 @@
     <ref role="2fAQMJ" node="4C32DkkHKAP" resolve="off" />
     <node concept="2f$o0p" id="4C32DkkHKDH" role="2f$o0u">
       <property role="TrG5h" value="button" />
-      <property role="2f$o0r" value="8" />
+      <property role="2f$o0r" value="9" />
     </node>
     <node concept="2f$o0o" id="4C32DkkHKFU" role="2f$o0u">
       <property role="TrG5h" value="buzzer" />
-      <property role="2f$o0r" value="11" />
+      <property role="2f$o0r" value="13" />
     </node>
     <node concept="2f$o0o" id="4C32DkkHKI9" role="2f$o0u">
       <property role="TrG5h" value="led" />
@@ -78,10 +78,9 @@
         <ref role="2fAQRi" node="4C32DkkHKDH" resolve="button" />
         <ref role="2fAQRg" node="4C32DkkHKLh" resolve="on" />
       </node>
-      <node concept="2O27Bj" id="4C32DkkHKOo" role="2fAQP_">
-        <property role="2O27BP" value="523yQtkiLLd/220" />
+      <node concept="2O27Bj" id="7GOI8vysBmN" role="2fAQP_">
+        <property role="2O27BP" value="523yQtkiLDW/262" />
         <property role="299vT7" value="1" />
-        <property role="299vT4" value="4Zcn436Uq6B/500" />
         <ref role="2fAQGV" node="4C32DkkHKFU" resolve="buzzer" />
       </node>
     </node>

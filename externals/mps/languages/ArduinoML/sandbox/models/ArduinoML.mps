@@ -75,7 +75,6 @@
       <node concept="2O27Bj" id="523yQtkkowC" role="2fAQP_">
         <property role="2O27BP" value="523yQtkiLLd/220" />
         <property role="299vT7" value="1" />
-        <property role="299vT4" value="4Zcn436Uq6B/500" />
         <ref role="2fAQGV" node="523yQtkkomj" resolve="buzzer" />
       </node>
       <node concept="2O27BE" id="523yQtkkoxY" role="2fAQP_">
@@ -85,11 +84,11 @@
     </node>
     <node concept="2f$o0p" id="523yQtkk7yi" role="2f$o0u">
       <property role="TrG5h" value="button" />
-      <property role="2f$o0r" value="8" />
+      <property role="2f$o0r" value="9" />
     </node>
     <node concept="2f$o0o" id="523yQtkkomj" role="2f$o0u">
       <property role="TrG5h" value="buzzer" />
-      <property role="2f$o0r" value="11" />
+      <property role="2f$o0r" value="13" />
     </node>
     <node concept="2f$o0o" id="523yQtkkop7" role="2f$o0u">
       <property role="TrG5h" value="red_led" />
