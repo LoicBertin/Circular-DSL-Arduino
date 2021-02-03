@@ -27,13 +27,7 @@
       </concept>
       <concept id="8995722191379911291" name="ArduinoML.structure.State" flags="ng" index="2fAQJg">
         <child id="8995722191379911886" name="actions" index="2fAQP_" />
-        <child id="8995722191379911888" name="transition" index="2fAQPV" />
         <child id="2013017281521841882" name="dualTransition" index="1cePDn" />
-      </concept>
-      <concept id="8995722191379911793" name="ArduinoML.structure.Transition" flags="ng" index="2fAQRq">
-        <property id="8995722191379911799" name="status" index="2fAQRs" />
-        <reference id="8995722191379911803" name="target" index="2fAQRg" />
-        <reference id="8995722191379911801" name="sensor" index="2fAQRi" />
       </concept>
       <concept id="8984517278119170831" name="ArduinoML.structure.AnalogicAction" flags="ng" index="2O27Bj">
         <property id="5750072257530143236" name="duration" index="299vT4" />
@@ -84,11 +78,6 @@
     </node>
     <node concept="2fAQJg" id="1JJF8PnPfqi" role="2fAQME">
       <property role="TrG5h" value="on" />
-      <node concept="2fAQRq" id="1JJF8PnPfqj" role="2fAQPV">
-        <property role="2fAQRs" value="523yQtkj5Bi/false" />
-        <ref role="2fAQRi" node="1JJF8PnPfpT" resolve="button" />
-        <ref role="2fAQRg" node="1JJF8PnPfpR" resolve="off" />
-      </node>
       <node concept="2O27Bj" id="1JJF8PnPOZe" role="2fAQP_">
         <property role="2O27BP" value="523yQtkiLLd/220" />
         <property role="299vT7" value="1" />
