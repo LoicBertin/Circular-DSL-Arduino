@@ -54,6 +54,7 @@ abstract class GroovuinoMLBasescript extends Script {
 					[duration : { time ->
 						actions.get(actions.size() - 1).setDuration(duration instanceof String ? (DURATION) ((GroovuinoMLBinding) this.getBinding()).getVariable(duration) : (DURATION) duration)
 						actions.get(actions.size() - 1).setNumberOfIteration(time)
+						["time" : null]
 					}]
 				}]
 			 }]
