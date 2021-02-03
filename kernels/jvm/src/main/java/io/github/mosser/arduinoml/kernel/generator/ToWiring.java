@@ -131,8 +131,18 @@ public class ToWiring extends Visitor<StringBuffer> {
 			for (Sensor sensor : transition.getSensor()) {
 				String sensorName = sensor.getName();
 				if (transition.getSensor().indexOf(sensor) == transition.getSensor().size()-1) {
-					w(String.format("digitalRead(%d) == %s && %sBounceGuard ",
-							sensor.getPin(), transition.getValue(), sensorName));
+					if(transition.getLogical().equals(LOGICAL.XOR)){
+						w(String.format("(digitalRead(%d) == %s && %sBounceGuard", sensor.getPin(), transition.getValue(), sensorName));
+						for(Sensor sensorBis : transition.getSensor()){
+							if(!sensorBis.equals(sensor)){
+								w(String.format(" && digitalRead(%d) == %s && %sBounceGuard", sensorBis.getPin(), invertSignal(transition.getValue()), sensorBis.getName()));
+							}
+						}
+						w(String.format(")"));
+					}else{
+						w(String.format("digitalRead(%d) == %s && %sBounceGuard ",
+								sensor.getPin(), transition.getValue(), sensorName));
+					}
 				} else {
 					if (transition.getLogical().equals(LOGICAL.OR)) {
 						w(String.format("digitalRead(%d) == %s && %sBounceGuard || ",
@@ -141,9 +151,13 @@ public class ToWiring extends Visitor<StringBuffer> {
 						w(String.format("digitalRead(%d) == %s && %sBounceGuard && ",
 								sensor.getPin(), transition.getValue(), sensorName));
 					} else if (transition.getLogical().equals(LOGICAL.XOR)) {
-						w(String.format("(digitalRead(%d) == %d && %sBounceGuard || digitalRead(%d) == %s && %sBounceGuard) ",
-								sensor.getPin(), transition.getValue(), sensorName,
-								sensor.getPin(), invertSignal(transition.getValue()), sensorName));
+						w(String.format("(digitalRead(%d) == %s && %sBounceGuard", sensor.getPin(), transition.getValue(), sensorName));
+						for(Sensor sensorBis : transition.getSensor()){
+							if(!sensorBis.equals(sensor)){
+								w(String.format(" && digitalRead(%d) == %s && %sBounceGuard", sensorBis.getPin(), invertSignal(transition.getValue()), sensorBis.getName()));
+							}
+						}
+						w(String.format(") ||"));
 					}
 				}
 			}
